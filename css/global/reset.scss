@@ -1,0 +1,28 @@
+@import "./_colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+button,
+input {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+*,
+li {
+  list-style: none;
+}
+
+a {
+  color: $white;
+  text-decoration: inherit;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

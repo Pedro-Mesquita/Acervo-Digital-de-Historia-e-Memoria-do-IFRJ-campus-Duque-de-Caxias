@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,MAAU;EACN,IAAI;IAAC,OAAO,EAAE,CAAC;;EACf,EAAE;IAAC,OAAO,EAAE,CAAC;;;;AAEjB,AAAA,IAAI,CAAA;EACA,SAAS,EAAE,gBAAgB;CAC9B",
+    "sources": [
+        "globalEffects.scss"
+    ],
+    "names": [],
+    "file": "globalEffects.css"
+}

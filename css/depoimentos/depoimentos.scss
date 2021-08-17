@@ -1,0 +1,430 @@
+@import "../global/reset.scss";
+
+// header
+
+header {
+  margin-bottom: 70px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 50px;
+}
+
+#header-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#sub-header-container > h1 {
+  font-weight: 700;
+  font-size: 32px;
+  width: 350px;
+  margin-left: 50px;
+}
+
+// main
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section {
+  display: flex;
+}
+
+.video-article:nth-child(1) {
+  margin-right: 50px;
+}
+
+.video-article > p:nth-child(3) {
+  width: 450px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.video-depoimentos {
+  width: 450px;
+  height: 300px;
+}
+
+// main > line
+
+.line {
+  width: 100%;
+  max-width: 1000px;
+  height: 3px;
+  background-color: $gray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+// main > grid
+
+.grid {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px 10px;
+  margin-top: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+.item > p:nth-child(2) {
+  text-align: center;
+}
+
+.item > p:nth-child(3) {
+  text-align: justify;
+  margin-top: 20px;
+  width: 250px;
+}
+
+@media (max-width: 1050px) and (min-width: 830px) {
+  //main
+  main > section {
+    justify-content: space-around;
+  }
+
+  //header
+  #sub-header-container > h1 {
+    margin-left: 50px;
+  }
+
+  //iframe
+  .video-depoimentos {
+    width: 350px;
+    height: 200px;
+  }
+
+  //article text
+  .video-article:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .video-article > p:nth-child(3) {
+    width: 350px;
+  }
+  //line
+  .line {
+    width: 750px;
+  }
+
+  //img
+  .item > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 830px) and (min-width: 690px) {
+  //main
+  main > section {
+    justify-content: space-around;
+  }
+
+  //header
+  #sub-header-container > h1 {
+    margin-left: 50px;
+  }
+
+  //iframe
+  .video-depoimentos {
+    width: 600px;
+    height: 400px;
+  }
+
+  //artcile
+  .video-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //article text
+  .video-article:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .video-article > p:nth-child(3) {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  //line
+  .line {
+    width: 600px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  //img
+  .item > img {
+    width: 250px;
+    height: 250px;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // grid
+  .grid {
+    grid-template-columns: auto auto;
+  }
+
+  .last-item {
+    grid-column: 1 / span 2;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 690px) and (min-width: 520px) {
+  //main
+  main > section {
+    justify-content: space-around;
+  }
+
+  //header
+  #sub-header-container > h1 {
+    margin-left: 50px;
+  }
+
+  //iframe
+  .video-depoimentos {
+    width: 450px;
+    height: 350px;
+  }
+
+  //artcile
+  .video-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //article text
+  .video-article:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .video-article > p:nth-child(3) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  //line
+  .line {
+    width: 470px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  //img
+  .item > img {
+    width: 350px;
+    height: 350px;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // grid
+  .grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 520px) and (min-width: 430px) {
+  //main
+  main > section {
+    justify-content: space-around;
+  }
+
+  //header
+  #sub-header-container > h1 {
+    margin-left: 50px;
+  }
+
+  //iframe
+  .video-depoimentos {
+    width: 350px;
+    height: 250px;
+  }
+
+  //artcile
+  .video-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //article text
+  .video-article:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .video-article > p:nth-child(3) {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+  //line
+  .line {
+    width: 400px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  //img
+  .item > img {
+    width: 250px;
+    height: 250px;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // grid
+  .grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 430px) and (min-width: 350px) {
+  //main
+  main > section {
+    justify-content: space-around;
+  }
+
+  //header
+  #sub-header-container > h1 {
+    margin-left: 50px;
+  }
+
+  //iframe
+  .video-depoimentos {
+    width: 300px;
+    height: 220px;
+  }
+
+  //artcile
+  .video-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //article text
+  .video-article:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .video-article > p:nth-child(3) {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  //line
+  .line {
+    width: 320px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  //img
+  .item > img {
+    width: 250px;
+    height: 250px;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // grid
+  .grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 350px) and (min-width: 250px) {
+  //main
+  main > section {
+    justify-content: space-around;
+  }
+
+  //header
+  #sub-header-container > h1 {
+    margin-left: 50px;
+  }
+
+  //iframe
+  .video-depoimentos {
+    width: 220px;
+    height: 300px;
+  }
+
+  //artcile
+  .video-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //article text
+  .video-article:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .video-article > p:nth-child(3) {
+    width: 220px;
+    margin-bottom: 30px;
+  }
+  //line
+  .line {
+    width: 250px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  //img
+  .item > img {
+    width: 220px;
+    height: 220px;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // grid
+  .grid {
+    grid-template-columns: auto;
+  }
+}

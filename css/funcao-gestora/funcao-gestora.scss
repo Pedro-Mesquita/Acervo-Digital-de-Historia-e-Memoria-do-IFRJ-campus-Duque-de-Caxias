@@ -1,0 +1,131 @@
+@import "../global/reset.scss";
+// header
+
+header {
+  margin-bottom: 70px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#header-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#sub-header-container > h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+// main
+
+h2 {
+  margin-bottom: 50px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid {
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px 40px;
+}
+
+.item > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+// line
+
+.line {
+  width: 100%;
+  max-width: 1000px;
+  height: 3px;
+  background-color: $gray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+  header {
+    margin-top: 50px;
+  }
+  #header-container {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 850px) {
+  header {
+    margin-top: 50px;
+  }
+  #header-container {
+    margin-left: 40px;
+  }
+  .grid {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 580px) {
+  header {
+    margin-top: 50px;
+  }
+  #header-container {
+    margin-left: 40px;
+  }
+  .grid {
+    max-width: 500px;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 580px) and (min-width: 460px) {
+  header {
+    margin-top: 50px;
+  }
+  #header-container {
+    margin-left: 40px;
+  }
+  .grid {
+    max-width: 400px;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 460px) and (min-width: 350px) {
+  header {
+    margin-top: 50px;
+  }
+  #header-container {
+    margin-left: 40px;
+  }
+  .grid {
+    max-width: 300px;
+    grid-template-columns: auto ;
+  }
+}
+
+
+@media (max-width: 350px){
+  header {
+    margin-top: 50px;
+  }
+  #header-container {
+    margin-left: 40px;
+  }
+  .grid {
+    max-width: 230px;
+    grid-template-columns: auto ;
+  }
+}
